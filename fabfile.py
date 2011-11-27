@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
 from __future__ import print_function
 
 from fabric.api import task, env, local, run, cd, lcd, put
