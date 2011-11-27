@@ -1,7 +1,7 @@
 @import url(http: //fonts.googleapis.com/css?family=Inconsolata);
 
 html {
-    background: #EEE;
+    background: #EEE url("paven.png");
 }
 
 body {
@@ -20,10 +20,10 @@ article, footer {
 
 article {
     margin: 2.5em auto 0 auto;
-    border: 1px solid ;
-    border-color: #ddd #aaa #aaa #ddd;
     padding: 2em;
-    background: #fff;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 12px;
+    box-shadow: 0 0 150px white;
 }
 
 h1 {
