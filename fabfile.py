@@ -7,19 +7,19 @@ env.hosts = ['sharat87@sharat87.webfactional.com']
 @task(default=True)
 def up():
     tempdir = '/tmp/mit-license'
-    archive = '/tmp/mit-license.tar.bz2'
+    archive = 'mit-license.tar.bz2'
 
     local('cp -r . ' + tempdir)
 
     with lcd(tempdir):
         local('rm -v fabfile.py*')
-        local('tar -cjf ' + archive + ' *')
+        local('tar -cjf /tmp/' + archive + ' *')
 
-    put(archive)
+    put('/tmp/' + archive)
 
     with cd('~/webapps/mit_license'):
         run('rm -rf ./*')
         run('tar -xjf ~/' + archive)
         run('rm ~/' + archive)
 
-    local('rm -rf ' + tempdir + ' ' + archive)
+    local('rm -rf ' + tempdir + ' /tmp/' + archive)
