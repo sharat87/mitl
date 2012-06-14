@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
 
 html {
     background: #EEE url("paven.png");
@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Open Sans";
+    font-family: Ubuntu;
     font-size: 1.3em;
     line-height: 1.3em;
 }
@@ -19,8 +19,8 @@ article, footer {
 }
 
 article {
-    margin: 2.5em auto 0 auto;
-    padding: 2em;
+    margin: 12px auto 0 auto;
+    padding: 12px 24px;
     background-color: rgba(255, 255, 255, .6);
     border-radius: 12px;
     box-shadow: 0 0 150px white;
@@ -44,7 +44,7 @@ article p:last-child {
 }
 
 footer {
-    margin: 0em auto 2em auto;
+    margin: 6px auto 0;
     text-align: center;
 }
 
@@ -53,7 +53,7 @@ footer a {
     text-shadow: 0 1px 1px #fff;
     text-decoration: none;
     font-size: .8em;
-    padding: 1em;
+    display: inline-block;
 }
 
 footer a:before {
